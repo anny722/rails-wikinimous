@@ -1,0 +1,6 @@
+<% @articles.each do |article| %>
+  <%= link_to article_path(article.id) do  %>
+  <h2 class="text-info"><%= article.title %></h2>
+  <% end %>
+  <p><%= article.content %></p>
+<% end %>
